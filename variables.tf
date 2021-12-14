@@ -14,7 +14,7 @@ variable "Description" {
     type = string
 }
 
-varilable "Enabled" {
+variable "Enabled" {
     type = bool
 }
 
