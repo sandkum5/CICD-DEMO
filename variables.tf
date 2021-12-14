@@ -6,37 +6,26 @@ variable "secretkey" {
     type = string
 }
 
-variable "ntp" {
-    type = list(object({
-        Name = string
-        Description = string
-        Enabled = bool
-        NtpServers = list(string)
-        Timezone = string
-        Organization = object({
-            Name = string
-        })
-        Profiles = list(object({ Name = string }))
-        Tags = list(object({ Key = string, Value = string}))
-    }))
-    default = [{
-            Name = "ist_demo_ntp"
-            Description = "IST DEMO NTP Policy"
-            Enabled = true
-            NtpServers = ["1.1.1.1", "2.2.2.2"]
-            Timezone = "America/Los_Angeles"
-            Organization = { Name = "default" }
-            Profiles = null
-            Tags = null
-        }]
-    description = <<EOT
-    Name              : Name of NTP policy
-    Description       : Description of the NTP Policy
-    Enabled           : If NTP Policy is enabled
-    NtpServers        : List of NTP servers
-    Timezone          : Timezone of the NTP policy
-    Organization.Name : Organization Name
-    Tags              : Tags
-    Profiles          : Profiles
-    EOT
+variable "Name" {
+    type = string
+}
+
+variable "Description" {
+    type = string
+}
+
+varilable "Enabled" {
+    type = bool
+}
+
+variable "NtpServers" {
+    type = list(string)
+}
+
+variable "Timezone" {
+    type = string
+}
+
+variable "org_name" {
+    type = string
 }
