@@ -20,6 +20,7 @@ variable "Enabled" {
 
 variable "NtpServers" {
     type = list(string)
+    default = ["1.1.1.1", "2.2.2.2"]
 }
 
 variable "Timezone" {
