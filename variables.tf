@@ -1,3 +1,11 @@
+variable "apikey" {
+    type = string
+}
+
+variable "secretkey" {
+    type = string
+}
+
 variable "ntp" {
     type = list(object({
         Name = string
