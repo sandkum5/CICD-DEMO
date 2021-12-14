@@ -1,12 +1,14 @@
 terraform {
-    required_providers {
-        linuxbox = {
-            source = "numtide/linuxbox"
-            version = "0.4.2"
-        }
+  required_providers {
+    intersight = {
+      source = "CiscoDevNet/intersight"
+      # version = "1.0.16"
     }
+  }
 }
 
-provider "linuxbox" {
-    # Configuration options
+provider "intersight" {
+  apikey        = var.apikey
+  secretkey     = var.secretkey
+  endpoint      = "https://intersight.com"
 }
