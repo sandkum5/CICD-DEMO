@@ -27,6 +27,6 @@ variable "Timezone" {
     type = string
 }
 
-variable "org_name" {
+variable "OrgName" {
     type = string
 }
