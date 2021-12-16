@@ -8,14 +8,17 @@ variable "secretkey" {
 
 variable "Name" {
     type = string
+    default = "ntp_default"
 }
 
 variable "Description" {
     type = string
+    default = "NTP Policy Default Description"
 }
 
 variable "Enabled" {
     type = bool
+    default = True
 }
 
 variable "NtpServers" {
