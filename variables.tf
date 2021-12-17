@@ -18,7 +18,7 @@ variable "Description" {
 
 variable "Enabled" {
     type = bool
-    default = True
+    default = "True"
 }
 
 variable "NtpServers" {
