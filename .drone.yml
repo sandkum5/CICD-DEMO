@@ -1,0 +1,16 @@
+.drone.yml
+---
+kind: pipeline
+type: ssh
+name: default
+
+server:
+  host: 172.16.221.45
+  user: root
+  password:
+    from_secret: toor
+
+steps:
+- name: greeting
+  commands:
+  - echo hello world
