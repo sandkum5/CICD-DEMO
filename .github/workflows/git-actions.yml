@@ -51,6 +51,6 @@ jobs:
         shell: bash
         
       # Runs a terraform apply
-      - name: Plan
+      - name: Apply
         run: terraform apply -auto-approve
         shell: bash
