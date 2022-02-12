@@ -39,3 +39,8 @@ jobs:
       - name: Validate
         run: terraform validate
         shell: bash
+
+      # Runs a terraform plan
+      - name: Plan
+        run: terraform plan
+        shell: bash
