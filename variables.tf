@@ -1,11 +1,3 @@
-variable "apikey" {
-    type = string
-}
-
-variable "secretkey" {
-    type = string
-}
-
 variable "Name" {
     type = string
     default = "ntp_default"
