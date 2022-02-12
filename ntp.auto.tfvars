@@ -1,5 +1,5 @@
-Name = "ist_gitdemo_ntp1"
+Name = "git_actions_demo_ntp1"
 Enabled = true
 Timezone = "America/Los_Angeles"
-Description = "IST DEMO NTP1 vars using github actions"
+Description = "NTP Policy Created using github-actions CICD"
 OrgName = "default"
