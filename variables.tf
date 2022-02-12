@@ -1,9 +1,9 @@
 variable "API_KEY_ID" {
-    type=string
+    type = string
 }
 
 variable "SECRET_KEY" {
-    type=string
+    type = string
 }
 
 variable "Name" {
