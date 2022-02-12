@@ -1,2 +1,2 @@
-# IST-DEMO
-Demo Repo for IST Use Cases
+# Github-actions CICD DEMO
+Demo Repo for Github-actions CICD Demo
