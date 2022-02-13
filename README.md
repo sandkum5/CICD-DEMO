@@ -14,7 +14,7 @@ Step-3:
 - Install a self-hosted runner locally.
 - Go to Settings > Code and Automation > Actions > Runners tab and click on "New self-hosted runner" to get instructions on how to install a self-hosted runner.
 - Once the runner is installed and running, go to Settings > Code and Automation > Actions > Runners tab and you should see the runner in idle status.
-- Additionally, we need to ensure the tools are installed on the runner host to execute workflows. 
+- Additionally, we need to ensure the required tools are installed on the runner host to execute workflows. 
 - For example, if you want to run terraform commands, you need to have terraform pre-installed on the runner host before the workflow is triggered.
 
 Step-4:
