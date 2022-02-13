@@ -1,4 +1,7 @@
 terraform {
+  backend "local" {
+    path = pathexpand("~/actions-runner/tfstate")
+  }
   required_providers {
     intersight = {
       source = "CiscoDevNet/intersight"
