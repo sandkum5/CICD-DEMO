@@ -1,6 +1,6 @@
 terraform {
   backend "local" {
-    path = pathexpand("~/actions-runner/tfstate")
+    path = "../../../actions-runner/tfstate"
   }
   required_providers {
     intersight = {
