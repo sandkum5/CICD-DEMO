@@ -16,6 +16,7 @@ Step-3:
 - Once the runner is installed and running, go to Settings > Code and Automation > Actions > Runners tab and you should see the runner in idle status.
 - Additionally, we need to ensure the required tools are installed on the runner host to execute workflows. 
 - For example, if you want to run terraform commands, you need to have terraform pre-installed on the runner host before the workflow is triggered.
+- In this repo, I am using a etcd3 as the backend for terraform. Create a etcd docker container on the same host using https://hub.docker.com/r/bitnami/etcd/
 
 Step-4:
 - Ensure the runner tags are the same as defined in .github/workflows/github-actions.yml. If not, update "runs-on:" parameter with your runner tag values.
