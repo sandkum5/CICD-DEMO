@@ -1,9 +1,9 @@
 terraform {
-  backend "etcdv3" {
-    endpoints = ["localhost:2379"]
-    lock      = true
-    prefix    = "terraform-state/"
-  }
+  # backend "etcdv3" {
+  #  endpoints = ["localhost:2379"]
+  #  lock      = true
+  #  prefix    = "terraform-state/"
+  # }
   required_providers {
     intersight = {
       source = "CiscoDevNet/intersight"
